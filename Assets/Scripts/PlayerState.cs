@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerState : MonoBehaviour
 {
     public float health = 1.0f;
+    public Vector3 position = new Vector3(0, 0, 0);
 
 
     // Start is called before the first frame update
