@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerState : MonoBehaviour
 {
-    public float health = 1.0f;
-    public Vector3 position = new Vector3(0, 0, 0);
+    public float health = 100.0f;
 
 
     // Start is called before the first frame update
@@ -28,5 +27,10 @@ public class PlayerState : MonoBehaviour
     public bool IsAlive()
     {
         return health > 0;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        //TODO
     }
 }
