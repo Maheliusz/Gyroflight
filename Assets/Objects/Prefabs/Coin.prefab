@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2178766743538545675}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 7412026577853681344}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,6 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b8aa9b1ee3dc740ae1b8ef5636e42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickUpType: 0
+  amount: 0
 --- !u!114 &7412026577853681344
 MonoBehaviour:
   m_ObjectHideFlags: 0
