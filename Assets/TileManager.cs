@@ -27,7 +27,7 @@ public class TileManager : MonoBehaviour
         if (_distanceTravelled >= tileLength)
         {
             _distanceTravelled = 0;
-            SpawnTile(0, new Vector3(0,0,40));
+            SpawnTile(0, new Vector3(0,0,80));
         }
         else
         {
