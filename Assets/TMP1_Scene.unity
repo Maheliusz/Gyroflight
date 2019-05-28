@@ -218,7 +218,7 @@ PrefabInstance:
     - target: {fileID: 3158199014562208775, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
         type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 3158199014562208775, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
         type: 3}
@@ -233,12 +233,32 @@ PrefabInstance:
     - target: {fileID: 3158199014562208775, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
         type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3158199014562208775, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
         type: 3}
       propertyPath: m_CollisionDetection
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158199014562208775, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3158199014562208775, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160518666363513602, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911537909819031278, guid: bf63dbf3ef0897d4c9c31792fd9a22d3,
+        type: 3}
+      propertyPath: forceCoeffecient
+      value: 100000000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf63dbf3ef0897d4c9c31792fd9a22d3, type: 3}

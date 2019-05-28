@@ -6,12 +6,13 @@ public class PlaneController : MonoBehaviour
 {
     public float score = 0f;
     public float health = 100f;
-    //public float speed = 100f;
+    public float forceCoeffecient = 20f;
     private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Debug.Log(rb);
     }
 
     // Update is called once per frame
@@ -20,23 +21,27 @@ public class PlaneController : MonoBehaviour
         //this.transform.position += Vector3.forward * Time.deltaTime; //TODO: put real movement here
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            //transform.position += Vector3.left * speed * Time.deltaTime;
-            rb.MovePosition(Vector3.left * Time.deltaTime);
+//            transform.position += Vector3.left * speed * Time.deltaTime;
+//            rb.MovePosition(Vector3.left * Time.deltaTime);
+              rb.AddForce(Vector3.left * forceCoeffecient);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            //transform.position += Vector3.right * speed * Time.deltaTime;
-            rb.MovePosition(Vector3.right * Time.deltaTime);
+//            transform.position += Vector3.right * speed * Time.deltaTime;
+//            rb.MovePosition(Vector3.right * Time.deltaTime);
+            rb.AddForce(Vector3.right* forceCoeffecient);
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            //transform.position += Vector3.up * speed * Time.deltaTime;
-            rb.MovePosition(Vector3.up * Time.deltaTime);
+//            transform.position += Vector3.up * speed * Time.deltaTime;
+//            rb.MovePosition(Vector3.up * Time.deltaTime);
+            rb.AddForce(Vector3.up* forceCoeffecient);
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            //transform.position += Vector3.down * speed * Time.deltaTime;
-            rb.MovePosition(Vector3.down * Time.deltaTime);
+//            transform.position += Vector3.down * speed * Time.deltaTime;
+//            rb.MovePosition(Vector3.down * Time.deltaTime);
+            rb.AddForce(Vector3.down * forceCoeffecient);
         }
     }
 
