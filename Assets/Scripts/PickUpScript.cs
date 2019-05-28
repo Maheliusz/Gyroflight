@@ -14,6 +14,13 @@ public class PickUpScript : MonoBehaviour
         DAMAGE
     }
 
+    private void Update()
+    {
+        Vector3 position = this.transform.position;
+        position[2] = this.transform.parent.transform.position.z;
+        this.transform.position = position;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         var playerScript = other.gameObject.GetComponent<PlaneController>();

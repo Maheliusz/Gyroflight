@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using UnityEngine;
 using Quaternion = UnityEngine.Quaternion;
@@ -10,12 +11,28 @@ using Vector3 = UnityEngine.Vector3;
 public class Tile : MonoBehaviour
 {
     private float _distanceTravelled = 0;
-
+    public List<Vector3> spawnPositions;
+    public GameObject[] possiblePickUps;
 
     // Start is called before the first frame update
     void Start()
     {
-    
+        int amountOfSpawns = Random.Range(0, spawnPositions.Count);
+        List<Vector3> chosenSpawns = new List<Vector3>();
+        for (int i = 0; i < amountOfSpawns; i++)
+        {
+            int position = Random.Range(0, spawnPositions.Count);
+            chosenSpawns.Add(spawnPositions[position]);
+            spawnPositions.RemoveAt(position);
+        }
+        foreach (Vector3 point in spawnPositions)
+        {
+            GameObject pickUp = possiblePickUps[Random.Range(0, possiblePickUps.Length)];
+            pickUp = Instantiate(pickUp) as GameObject;
+            Vector3 spawnPoint = new Vector3(point.x, point.y, this.transform.position.z);
+            pickUp.transform.SetParent(transform);
+            pickUp.transform.position = spawnPoint;
+        }
     }
 
     
@@ -30,4 +47,5 @@ public class Tile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
