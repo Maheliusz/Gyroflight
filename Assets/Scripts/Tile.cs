@@ -42,7 +42,7 @@ public class Tile : MonoBehaviour
     {
         float speed = this.transform.parent.gameObject.GetComponent<TileManager>().currentSpeed;
         this.transform.Translate(-Vector3.forward * speed * Time.deltaTime);
-        _distanceTravelled += TileManager.BLOCK_SPEED * Time.deltaTime;
+        _distanceTravelled += speed * Time.deltaTime;
         if (_distanceTravelled > TileManager.TILE_MAX_DISTANCE)
         {
             Destroy(gameObject);
