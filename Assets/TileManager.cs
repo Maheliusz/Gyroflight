@@ -35,7 +35,7 @@ public class TileManager : MonoBehaviour
         }
         else
         {
-            _distanceTravelled += Time.deltaTime * BLOCK_SPEED;
+            _distanceTravelled += Time.deltaTime * currentSpeed;
         }
     }
 

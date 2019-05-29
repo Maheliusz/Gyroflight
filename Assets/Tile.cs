@@ -40,8 +40,8 @@ public class Tile : MonoBehaviour
 // Update is called once per frame
     void Update()
     {
-        //float speed = this.transform.parent.gameObject.GetComponent<TileManager>().currentSpeed;
-        this.transform.Translate(-Vector3.forward * TileManager.BLOCK_SPEED * Time.deltaTime);
+        float speed = this.transform.parent.gameObject.GetComponent<TileManager>().currentSpeed;
+        this.transform.Translate(-Vector3.forward * speed * Time.deltaTime);
         _distanceTravelled += TileManager.BLOCK_SPEED * Time.deltaTime;
         if (_distanceTravelled > TileManager.TILE_MAX_DISTANCE)
         {

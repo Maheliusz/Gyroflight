@@ -48,10 +48,10 @@ public class PlaneController : MonoBehaviour
         if (health <= 0)
         {
             GameManager.Instance.Die();
-            Destroy(this);
+            Destroy(this.gameObject);
         }
-        //scoreText.text = Mathf.RoundToInt(score).ToString();
-        //healthSlider.value = health;
+        scoreText.text = Mathf.RoundToInt(score).ToString();
+        healthSlider.value = health;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -65,7 +65,7 @@ public class PlaneController : MonoBehaviour
 
     public void Heal(float amount)
     {
-        health += amount;
+        health = Mathf.Min(100, health+amount);
     }
 
     public void AddScore(float amount)
