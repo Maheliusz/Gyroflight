@@ -11,6 +11,7 @@ public class PlaneController : MonoBehaviour
     public Slider healthSlider;
     public Text scoreText;
     private Rigidbody rb;
+    private bool canMove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,34 +22,28 @@ public class PlaneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && canMove)
         {
-//            transform.position += Vector3.left * speed * Time.deltaTime;
-//            rb.MovePosition(Vector3.left * Time.deltaTime);
             rb.AddForce(Vector3.left * forceCoeffecient);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) && canMove)
         {
-//            transform.position += Vector3.right * speed * Time.deltaTime;
-//            rb.MovePosition(Vector3.right * Time.deltaTime);
             rb.AddForce(Vector3.right* forceCoeffecient);
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) && canMove)
         {
-//            transform.position += Vector3.up * speed * Time.deltaTime;
-//            rb.MovePosition(Vector3.up * Time.deltaTime);
             rb.AddForce(Vector3.up* forceCoeffecient);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) && canMove)
         {
-//            transform.position += Vector3.down * speed * Time.deltaTime;
-//            rb.MovePosition(Vector3.down * Time.deltaTime);
             rb.AddForce(Vector3.down * forceCoeffecient);
         }
         if (health <= 0)
         {
             GameManager.Instance.Die();
-            Destroy(this.gameObject);
+            this.gameObject.GetComponent<UIScript>().PlayerDied();
+            this.rb.velocity = Vector3.zero;
+            this.canMove = false;
         }
         scoreText.text = Mathf.RoundToInt(score).ToString();
         healthSlider.value = health;
