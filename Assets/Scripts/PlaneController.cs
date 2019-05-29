@@ -15,7 +15,6 @@ public class PlaneController : MonoBehaviour
     private Rigidbody rb;
 
     public Camera camera;
-    public GameObject CamContainer;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +33,9 @@ public class PlaneController : MonoBehaviour
     private void ServeWithVR()
     {
         var rotation = camera.transform.rotation;
-        rb.AddForce(Vector3.left* forceCoeffecient * rotation.z + Vector3.right*forceCoeffecient / 100*rotation.y);
+        rb.AddForce(Vector3.left* forceCoeffecient * rotation.z + Vector3.right*forceCoeffecient*rotation.y);
         rb.AddForce(Vector3.down * forceCoeffecient * rotation.x);
-        
+        transform.rotation = rotation;
     }
 
     private void ServeWithArrows()

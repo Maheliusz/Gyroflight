@@ -470,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4235689978988790, guid: 5646abc556d558249902f0a6b84a55c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.72
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1248593315145294, guid: 5646abc556d558249902f0a6b84a55c5, type: 3}
       propertyPath: m_Name
@@ -564,7 +564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4235689978988790, guid: 5646abc556d558249902f0a6b84a55c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.52
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1248593315145294, guid: 5646abc556d558249902f0a6b84a55c5, type: 3}
       propertyPath: m_Name
@@ -695,11 +695,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6263194736436377039, guid: 39817a9d16a5cf041a0f27e36f70c36a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5027486797499640141, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
       propertyPath: m_Enabled
@@ -734,6 +729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6263194736436377039, guid: 39817a9d16a5cf041a0f27e36f70c36a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3210266897283303978, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
@@ -853,11 +853,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6263194736436377039, guid: 39817a9d16a5cf041a0f27e36f70c36a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5027486797499640141, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
       propertyPath: m_Enabled
@@ -886,6 +881,11 @@ PrefabInstance:
     - target: {fileID: 5027486797499640141, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
       propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6263194736436377039, guid: 39817a9d16a5cf041a0f27e36f70c36a,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3210266897283303978, guid: 39817a9d16a5cf041a0f27e36f70c36a,
