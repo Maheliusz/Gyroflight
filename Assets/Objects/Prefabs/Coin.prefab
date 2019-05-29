@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 7638221997192198317}
   - component: {fileID: 5244919191773730959}
   - component: {fileID: 4393001247368980024}
-  - component: {fileID: 6242431298355164599}
   - component: {fileID: 7412026577853681344}
+  - component: {fileID: 9162058601940433314}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: PickUp
@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 9011387724327827690}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 0.5, z: 5}
+  m_LocalScale: {x: 2.5, y: 0.25, z: 2.5}
   m_Children: []
   m_Father: {fileID: 2178766743538545675}
   m_RootOrder: 0
@@ -125,20 +125,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &6242431298355164599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9011387724327827690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97b8aa9b1ee3dc740ae1b8ef5636e42b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickUpType: 0
-  amount: 0
 --- !u!114 &7412026577853681344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,3 +149,17 @@ MonoBehaviour:
   endScale: {x: 0, y: 0, z: 0}
   scaleSpeed: 0
   scaleRate: 0
+--- !u!114 &9162058601940433314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9011387724327827690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b8aa9b1ee3dc740ae1b8ef5636e42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpType: 0
+  amount: 100

@@ -181,7 +181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9024244717989223800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.3, z: 0}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 8, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 9024244719072112295}
@@ -312,6 +312,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c515b265f50cde84992e158250facb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  possiblePickUps:
+  - {fileID: 3286678287126287509, guid: bdfb0552916d44a4db41a032c8ebcfd4, type: 3}
+  - {fileID: 7931813860590505818, guid: f3f59d824884b76448db041be3c6b96e, type: 3}
+  - {fileID: 7571940956673839356, guid: 39817a9d16a5cf041a0f27e36f70c36a, type: 3}
+  spawnPositions:
+  - {x: -7.5, y: 1.25, z: 0}
+  - {x: -2.5, y: 1.25, z: 0}
+  - {x: 2.5, y: 1.25, z: 0}
+  - {x: 7.5, y: 1.25, z: 0}
+  - {x: -7.5, y: 3.75, z: 0}
+  - {x: -2.5, y: 3.75, z: 0}
+  - {x: 2.5, y: 3.75, z: 0}
+  - {x: 7.5, y: 3.75, z: 0}
+  - {x: -7.5, y: 6.25, z: 0}
+  - {x: -2.5, y: 6.25, z: 0}
+  - {x: 2.5, y: 6.25, z: 0}
+  - {x: 7.5, y: 6.25, z: 0}
+  - {x: -7.5, y: 8.75, z: 0}
+  - {x: -2.5, y: 8.75, z: 0}
+  - {x: 2.5, y: 8.75, z: 0}
+  - {x: 7.5, y: 8.75, z: 0}
 --- !u!33 &2880712413752044576
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -333,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4682687166727978, guid: bf67beae2d4953447953edcca56c08c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.3
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 4682687166727978, guid: bf67beae2d4953447953edcca56c08c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -673,7 +694,7 @@ PrefabInstance:
     - target: {fileID: 5188506651182505212, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5188506651182505212, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
@@ -831,7 +852,7 @@ PrefabInstance:
     - target: {fileID: 5188506651182505212, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5188506651182505212, guid: 39817a9d16a5cf041a0f27e36f70c36a,
         type: 3}
