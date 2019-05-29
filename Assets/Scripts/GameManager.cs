@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     {
         //UIManager.Instance.SetStatus(Constants.StatusDeadTapToStart);
         this.GameState = GameState.Dead;
+        GameObject.Find("MainTileManager").GetComponent<TileManager>().currentSpeed = 0;
     }
 
     void Awake()

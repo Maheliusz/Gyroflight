@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3107212388151684825}
   - component: {fileID: 5027486797499640141}
   - component: {fileID: 6263194736436377039}
+  - component: {fileID: 5484443243510381207}
   m_Layer: 0
   m_Name: _BrickWall
   m_TagString: PickUp
@@ -91,6 +92,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5484443243510381207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6317599717154034300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b8aa9b1ee3dc740ae1b8ef5636e42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpType: 2
+  amount: 0
 --- !u!1 &7571940956673839356
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,5 +150,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b8aa9b1ee3dc740ae1b8ef5636e42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpType: 2
+  pickUpType: 0
   amount: 0

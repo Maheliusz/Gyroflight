@@ -17,7 +17,7 @@ public class Tile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int amountOfSpawns = Random.Range(0, spawnPositions.Count);
+        int amountOfSpawns = Random.Range(0, spawnPositions.Count-1);
         List<Vector3> chosenSpawns = new List<Vector3>();
         for (int i = 0; i < amountOfSpawns; i++)
         {
@@ -40,6 +40,7 @@ public class Tile : MonoBehaviour
 // Update is called once per frame
     void Update()
     {
+        //float speed = this.transform.parent.gameObject.GetComponent<TileManager>().currentSpeed;
         this.transform.Translate(-Vector3.forward * TileManager.BLOCK_SPEED * Time.deltaTime);
         _distanceTravelled += TileManager.BLOCK_SPEED * Time.deltaTime;
         if (_distanceTravelled > TileManager.TILE_MAX_DISTANCE)
