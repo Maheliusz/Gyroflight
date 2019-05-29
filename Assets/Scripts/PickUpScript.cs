@@ -25,7 +25,7 @@ public class PickUpScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            var playerScript = other.gameObject.GetComponent<PlaneController>();
+            var playerScript = other.gameObject.GetComponent<PlayerState>();
             switch (pickUpType)
             {
                 case PickUpScript.PickUpType.POINTS:
