@@ -97,7 +97,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 23.999998, y: 5.6452465, z: 21.599998}
+  m_Size: {x: 23.999998, y: 5.6452465, z: 28.56}
   m_Center: {x: 31.368847, y: -0.008496761, z: -134.727}
 --- !u!65 &6462113889065781883
 BoxCollider:
@@ -312,10 +312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c515b265f50cde84992e158250facb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possiblePickUps:
-  - {fileID: 3286678287126287509, guid: bdfb0552916d44a4db41a032c8ebcfd4, type: 3}
-  - {fileID: 7931813860590505818, guid: f3f59d824884b76448db041be3c6b96e, type: 3}
-  - {fileID: 7571940956673839356, guid: 39817a9d16a5cf041a0f27e36f70c36a, type: 3}
   spawnPositions:
   - {x: -7.5, y: 1.25, z: 0}
   - {x: -2.5, y: 1.25, z: 0}
@@ -333,6 +329,10 @@ MonoBehaviour:
   - {x: -2.5, y: 8.75, z: 0}
   - {x: 2.5, y: 8.75, z: 0}
   - {x: 7.5, y: 8.75, z: 0}
+  possiblePickUps:
+  - {fileID: 3286678287126287509, guid: bdfb0552916d44a4db41a032c8ebcfd4, type: 3}
+  - {fileID: 7931813860590505818, guid: f3f59d824884b76448db041be3c6b96e, type: 3}
+  - {fileID: 7571940956673839356, guid: 39817a9d16a5cf041a0f27e36f70c36a, type: 3}
 --- !u!33 &2880712413752044576
 MeshFilter:
   m_ObjectHideFlags: 0
