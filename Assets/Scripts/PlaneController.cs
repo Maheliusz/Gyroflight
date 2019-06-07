@@ -10,7 +10,7 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlaneController : MonoBehaviour
 {
-    public float forceCoeffecient = 20f;
+    public float forceCoeffecient = 10f;
     private Rigidbody rb;
 
     public Camera camera;
