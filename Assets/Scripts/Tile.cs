@@ -17,7 +17,8 @@ public class Tile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int amountOfSpawns = Random.Range(0, spawnPositions.Count-1);
+        int amountOfSpawns = Random.Range(0, Mathf.RoundToInt((spawnPositions.Count-1)/1.5f));
+//        Debug.Log("AoS = " + amountOfSpawns.ToString());
         List<Vector3> chosenSpawns = new List<Vector3>();
         for (int i = 0; i < amountOfSpawns; i++)
         {
@@ -25,7 +26,7 @@ public class Tile : MonoBehaviour
             chosenSpawns.Add(spawnPositions[position]);
             spawnPositions.RemoveAt(position);
         }
-        foreach (Vector3 point in spawnPositions)
+        foreach (Vector3 point in chosenSpawns)
         {
             GameObject pickUp = possiblePickUps[Random.Range(0, possiblePickUps.Length)];
             pickUp = Instantiate(pickUp) as GameObject;

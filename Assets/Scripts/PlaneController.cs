@@ -33,6 +33,7 @@ public class PlaneController : MonoBehaviour
 
     private void ServeWithVR()
     {
+        if (!canMove) return;
         var rotation = camera.transform.rotation;
         rb.AddForce(Vector3.left* forceCoeffecient * rotation.z + Vector3.right*forceCoeffecient*rotation.y);
         rb.AddForce(Vector3.down * forceCoeffecient * rotation.x);

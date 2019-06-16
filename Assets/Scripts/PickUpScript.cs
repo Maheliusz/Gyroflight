@@ -29,15 +29,15 @@ public class PickUpScript : MonoBehaviour
             switch (pickUpType)
             {
                 case PickUpScript.PickUpType.POINTS:
-                    Debug.Log("points picked up");
+//                    Debug.Log("points picked up");
                     playerScript.AddScore(amount);
                     break;
                 case PickUpScript.PickUpType.HEALTH:
-                    Debug.Log("health picked up");
+//                    Debug.Log("health picked up");
                     playerScript.Heal(amount);
                     break;
                 case PickUpScript.PickUpType.DAMAGE:
-                    Debug.Log("damage picked up");
+//                    Debug.Log("damage picked up");
                     playerScript.DealDamage(amount);
                     break;
             }

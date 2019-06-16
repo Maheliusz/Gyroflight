@@ -12,17 +12,26 @@ public class TileManager : MonoBehaviour
     private readonly Vector3 _tileScale = new Vector3(1f, 1f, 1f);
     private float _distanceTravelled = 0;
     public float currentSpeed;
+    private float realSpeed;
     
     public static float BLOCK_SPEED = 4f;
     public static float TILE_MAX_DISTANCE = 100f;
 
     void Start()
     {
-        currentSpeed = BLOCK_SPEED;
+//        currentSpeed = BLOCK_SPEED;
+        realSpeed = currentSpeed;
+        currentSpeed = 0;
+        Invoke("StartSpeed", 5f);
         for (int i = 0; i < 15; i++)
         {
             SpawnTile(0, new Vector3(0, 0, i*10));
         }
+    }
+
+    private void StartSpeed()
+    {
+        currentSpeed = realSpeed;
     }
 
     void Update()

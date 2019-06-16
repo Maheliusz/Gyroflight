@@ -16,7 +16,6 @@ public class PlayerState : MonoBehaviour
         if (health <= 0)
         {
             GameManager.Instance.Die();
-            this.gameObject.GetComponent<UIScript>().PlayerDied();
             planeHolder.GetComponent<PlaneController>().StopMovement();
         }
         scoreText.text = Mathf.RoundToInt(score).ToString();

@@ -13,7 +13,7 @@ public class BasicTerrainGenerator : MonoBehaviour
     {
         Mesh mesh = GetComponent<MeshFilter>().mesh;
         var vertices = mesh.vertices;
-        for (var i = 0; i < 8; i++)
+        for (var i = 0; i < 3; i++)
         {
             var spawnPoint = transform.TransformPoint(vertices[i]);
             var q = Random.Range(0, vertices.Length);
